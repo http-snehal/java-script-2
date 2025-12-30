@@ -1,0 +1,20 @@
+.button2{
+    background-color: rgb(42, 228, 42);
+    color: rgb(4, 4, 4);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width : 150px;
+
+}
+.button3{
+    background-color :aliceblue;
+    color : black;
+    border-radius: 15px;
+    width : 150px;
+    padding : 10px 20px;
+    cursor : pointer;
+    border : 2px solid black;
+
+}
