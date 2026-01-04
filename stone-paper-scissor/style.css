@@ -1,0 +1,62 @@
+/* 1. Global Reset & Dark Mode Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Monospace for coding feel */
+}
+
+body {
+    background-color: #1e1e1e; /* VS Code dark gray */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+}
+
+/* 2. Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #61dafb; /* React/Tech Blue */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 3. Button Styles */
+button {
+    background-color: #252526;
+    border: 2px solid #61dafb;
+    color: #61dafb;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+/* Hover Effect - "Glow" */
+button:hover {
+    background-color: #61dafb;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px #61dafb; /* Neon glow effect */
+    transform: translateY(-3px); /* slight lift */
+}
+
+/* Active/Click Effect */
+button:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+/* 4. Result Text Area */
+#result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    min-height: 40px; /* Prevents layout jump */
+    color: #ce9178; /* Orange-ish distinct color for results */
+    text-align: center;
+}
