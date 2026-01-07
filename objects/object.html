@@ -11,19 +11,22 @@
       price : 831,
       item_name : `T-shirt`
     };
-    console.log(product);
-    console.log(product.company);
-    console.log(product.price);
-    console.log(product.item_name);
+    // console.log(product);
+    // console.log(product.company);
+    // console.log(product.price);
+    // console.log(product.item_name);
 
-    product.company = `banana`;
-    console.log(product);
+    // product.company = `banana`;
+    // console.log(product);
 
-    console.log(product['company']); // alternate way to access property
+    // console.log(product['company']); // alternate way to access property
 
-    delete product.price;
-    console.log(product);
+    // delete product.price;
+    // console.log(product);
 
+    // destructuring
+    let { company} = product;
+    console.log(company);
   </script>
 </body>
 </html>

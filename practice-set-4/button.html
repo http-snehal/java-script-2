@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button id="clickMe">0</button>
+  
+
+
+  <script>
+    let button = document.getElementById('clickMe');
+    let numberOfClicks = localStorage.getItem('numberOfClicks') || 0;
+    button.innerText = ` ${numberOfClicks} `;
+    button.onclick = function() {
+      numberOfClicks++;
+      localStorage.setItem('numberOfClicks', numberOfClicks);
+      button.innerText = ` ${numberOfClicks} `;
+
+      if (numberOfClicks % 2 === 0) {
+        button.style.backgroundColor = 'blue';
+        button.style.color = 'white';
+      } else {
+        button.style.backgroundColor = 'red';
+        button.style.color = 'black';
+      }
+
+    }
+    
+
+  </script>
+</body>
+</html>

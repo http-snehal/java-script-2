@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>json</title>
+</head>
+<body>
+    <script>
+      // JSON : JavaScript Object Notation
+      // it is the representation of data in the form of key value pairs.
+      // it is used to store and exchange data between server and client.
+      let product = {
+        name : "t-shirt",
+        price : 831,
+        size : "M",
+
+        rating : {
+          rate : 4.5,
+          count : 130 
+      }
+      };
+      console.log(product);
+      console.log(typeof product); // object
+      let str = JSON.stringify(product); // object to json string
+      console.log(str);
+      console.log(typeof str); // string
+
+
+      let obj = JSON.parse(str); // json string to object
+      console.log(obj);
+      console.log(typeof obj); // object
+    </script>
+</body>
+</html>

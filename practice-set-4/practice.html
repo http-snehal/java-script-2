@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice set 4</title>
+</head>
+
+<body>
+  <h1 id = "greet"> </h1>
+
+
+  <script>
+    const greet = document.getElementById('greet');
+    let date = new Date();
+    let hours = date.getHours();
+    console.log(hours);
+
+    if (hours < 12) {
+        greet.innerText = "Good Morning!";
+    } else if (hours < 18) {
+        greet.innerText = "Good Afternoon!";
+    } else {
+        greet.innerText = "Good Evening!";
+    }
+    let span = document.createElement('span');
+    span.innerText = " Have a nice day!";
+    document.getElementById('greet').appendChild(span);
+
+  
+  </script>
+</body>
+</html>

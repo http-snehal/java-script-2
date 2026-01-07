@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dom</title>
+</head>
+<body>
+
+  <div id="myDiv">Hello, World!</div>
+
+
+  <script>
+    // DOM - Document Object Model
+    // It is a programming interface for web documents.
+    // It represents the page so that programs can change the document structure, style, and content
+   let button = document.createElement('button');
+    button.innerText = "Click Me";
+    // document.body.appendChild(button);
+    document.getElementById('myDiv').appendChild(button);
+    document.getElementById('myDiv').removeChild(button);
+  </script>
+  
+</body>
+</html>
