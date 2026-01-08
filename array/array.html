@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Array</title>
+</head>
+<body>
+
+
+  <script>
+    // Array is a special variable, which can hold more than one value at a time. 
+    // in js array can hold different data types.
+    // array is a special type of object.
+
+
+    let myArray = [1 , 'Laptop', 45000, 'Electronics', {rating: {stars: 4.5, reviews: 150}}];
+    console.log(myArray);
+    console.log(myArray[1]);
+    console.log(myArray[4].rating.stars);
+    console.log(typeof myArray);
+
+    // Array Methods
+
+    console.log(Array.isArray(myArray)); // true
+    console.log(myArray.length); // 5
+    myArray.push('discount'); // adds item at the end
+    myArray.pop(); // removes item from the end
+    myArray.unshift('HP'); // adds item at the beginning
+    myArray.shift(); // removes item from the beginning
+
+    myArray.splice(2, 1); // removes item from index 2
+    console.log(myArray.toString());
+    myArray.sort(); // sorts the array
+
+    let arr = [1,2,3,4,5];
+    
+    let [a, b, c, d, e] = arr; // destructuring
+    console.log(a, b, c, d, e);
+
+  </script>
+  
+</body>
+</html>
