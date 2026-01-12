@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener</title>
+</head>
+<body>
+
+  <button id="myButton">Click Me</button>
+
+
+  <script>
+    // Event Listener in JavaScript
+    // It is a procedure in JavaScript that waits for an event to occur.
+    // You can add event listeners to HTML elements to execute code when a specific event happens, such as a click, hover, or keypress.
+
+    let button = document.getElementById('myButton');
+
+    // Adding a click event listener to the button
+    button.addEventListener('click', function() {
+      alert('Button was clicked!');
+    });
+
+  let printdate   = () => {
+    let date = new Date();
+    console.log("Current Date and Time: " + date.toString());
+  };
+
+  button.addEventListener('click', printdate);
+
+  button.removeEventListener('click', printdate);
+  </script>
+</body>
+</html>

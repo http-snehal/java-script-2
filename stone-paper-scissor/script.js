@@ -38,7 +38,6 @@ resetBtn.onclick = function() {
     lossSpan.innerText = 0;
     drawSpan.innerText = 0;
     
-    // updateScoreBoard();
 };
 
 function playGame(userChoice) {

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>advance function</title>
+</head>
+<body>
+  <script>
+
+    // anonymous function 
+
+
+    // let sum = function(a, b) {
+    //   return a + b;
+    // };
+
+    // // let result = sum(5, 10);
+    // // console.log("Sum: " + result);
+
+    // let sumThree = function(a, b, c , sum) {
+    //   let partialSum = sum(a, b);
+    //   return partialSum + c;
+    // };
+
+    // console.log("Sum of three: " + sumThree(5, 10, 15, sum));
+
+
+    // Arrow function syntax
+
+    let sum = (a, b) => {
+    return a + b;}
+
+  console.log("Sum using arrow function: " + sum(7, 8));
+
+  let square = x => x * x;
+  console.log("Square using arrow function: " + square(6));
+
+
+  // setTimeout with arrow function
+  // synatx: setTimeout(() => { //code to be executed }, delayInMilliseconds);
+
+  let alarm = setTimeout(() => {
+    console.log("Time's up!");
+  }, 2000);
+
+  let timerId = setInterval(() => {
+    console.log("Interval message");
+  }, 1000);
+
+clearTimeout(alarm);
+clearInterval(timerId);
+
+//setInterval and clearInterval
+
+let intrvalId = setInterval(() => {
+  console.log("Hello every 2 seconds");
+}, 2000);
+
+clearInterval(intrvalId , 5000); // stops after 5 seconds
+
+
+// filter method
+// syntax: array.filter((element, index, array) => { //code to be executed });
+
+let arr = [10, 15, 20, 25, 30, 35, 40];
+
+let odd = arr.filter((num , index) => {
+  if (num%2 != 0) {
+    return true;
+  } else {
+    return false;
+  }
+
+});
+
+console.log("Odd numbers: " + odd);
+
+// map method
+// syntax: array.map((element, index, array) => { //code to be executed });
+
+let doubled = arr.map((num, index) => {
+  return num * 2;
+});
+console.log("Doubled array: " + doubled);
+
+
+
+  </script>
+</body>
+</html>
